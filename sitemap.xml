@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kathrynrbrink.com/</loc></url>
-  <url><loc>https://kathrynrbrink.com/services.html</loc></url>
-  <url><loc>https://kathrynrbrink.com/work.html</loc></url>
-  <url><loc>https://kathrynrbrink.com/work-biobuilder.html</loc></url>
-  <url><loc>https://kathrynrbrink.com/about.html</loc></url>
-  <url><loc>https://kathrynrbrink.com/publications.html</loc></url>
-  <url><loc>https://kathrynrbrink.com/contact.html</loc></url>
+  <url><loc>https://kathrynrbrink.com/services</loc></url>
+  <url><loc>https://kathrynrbrink.com/work</loc></url>
+  <url><loc>https://kathrynrbrink.com/work-biobuilder</loc></url>
+  <url><loc>https://kathrynrbrink.com/about</loc></url>
+  <url><loc>https://kathrynrbrink.com/publications</loc></url>
+  <url><loc>https://kathrynrbrink.com/contact</loc></url>
 </urlset>

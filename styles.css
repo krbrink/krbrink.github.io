@@ -171,7 +171,8 @@ blockquote footer { color: var(--slate); font-size: .9rem; }
 .prose-wide { max-width: var(--measure); font-size: 1.12rem; }
 .prose-wide .lead { color: var(--teal); font-size: 1.45rem; font-weight: 650; }
 .prose-wide h2 { margin-top: 2.5rem; font-size: 1.35rem; }
-.about-bio { display: grid; grid-template-columns: minmax(18.75rem, 20.625rem) minmax(0, 37.5rem); align-items: start; justify-content: start; column-gap: clamp(3rem, 5vw, 4rem); font-size: 1.12rem; }
+.about-bio { display: block; max-width: var(--measure); font-size: 1.12rem; }
+.about-bio-lead { margin-bottom: 1.5rem; }
 .about-bio .lead { margin-bottom: 0; color: var(--teal); font-size: 1.45rem; font-weight: 650; }
 .profile-links { width: 100%; display: flex; align-items: center; justify-content: flex-start; gap: .75rem; margin-top: 2rem; }
 .profile-links a { min-height: 2.8rem; display: inline-flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .5rem .8rem; border: 1px solid var(--teal); color: var(--teal); font-size: .88rem; font-weight: 700; text-decoration: none; }
@@ -190,7 +191,7 @@ blockquote footer { color: var(--slate); font-size: .9rem; }
 
 .publication-page { max-width: 60rem; }
 .publication-group + .publication-group { margin-top: 5rem; }
-.publication-group > h2 { margin-bottom: 2rem; color: var(--teal); font-size: 1rem; letter-spacing: .1em; text-transform: uppercase; }
+.publication-group > h2 { margin-bottom: 2rem; letter-spacing: -.035em; }
 .publication { padding-block: 0 2.5rem; }
 .publication + .publication { padding-top: 2.5rem; border-top: 1px solid var(--rule); }
 .publication h3 { margin-bottom: .75rem; }
@@ -273,7 +274,6 @@ blockquote footer { color: var(--slate); font-size: .9rem; }
   .about-hero > div { order: 1; }
   .about-hero figure { width: 100%; order: 2; justify-self: stretch; margin: 0; }
   .about-hero img { width: 15rem; height: auto; max-width: 70vw; margin-inline: auto; }
-  .about-bio { grid-template-columns: 1fr; row-gap: 2rem; }
   .beyond-work { grid-template-columns: 1fr; gap: 2rem; }
   .beyond-work figure { justify-self: start; }
   .footer-grid { grid-template-columns: 1fr; }

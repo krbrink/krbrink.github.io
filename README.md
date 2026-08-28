@@ -9,4 +9,4 @@ Personal professional website for Kathryn Brink, published with GitHub Pages.
 - Change colors and typography using the variables at the top of `styles.css`.
 - Replace the placeholder CV link after adding the PDF to this repository.
 
-The site uses plain HTML and CSS and has no build step or external dependencies.
+The site uses plain HTML and CSS with GitHub Pages' built-in Jekyll processing. Each secondary HTML page has a `permalink` in its front matter so public URLs omit the `.html` extension.
