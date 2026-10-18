@@ -1,0 +1,18 @@
+url: "https://kathrynbrinkconsulting.com"
+baseurl: ""
+title: "Kathryn Brink"
+alternate_name: "Kathryn Brink Consulting"
+social_image: "/assets/optimized/kathryn-brink-headshot-480.jpg"
+stylesheet_version: "20261018-project-service-links-1"
+# Indexing enabled at the user's request for launch preparation.
+# This does not publish the site; deployment still requires separate approval.
+search_indexing: true
+timezone: America/New_York
+exclude:
+  - AGENTS.md
+  - skills
+  - scripts
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

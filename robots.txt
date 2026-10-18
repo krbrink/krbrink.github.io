@@ -1,4 +1,6 @@
+---
+---
 User-agent: *
 Allow: /
 
-Sitemap: https://kathrynrbrink.com/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml

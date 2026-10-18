@@ -1,30 +1,17 @@
 ---
 permalink: /about
+title: "About Kathryn Brink"
+description: "Meet Kathryn Brink, a research and strategy consultant with PhD-level scientific training and experience across research, policy, biosecurity, and biomanufacturing."
+og_type: profile
 ---
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Kathryn Brink combines scientific training, cross-sector experience, and stakeholder perspectives to produce rigorous research and practical recommendations.">
-
-  <meta property="og:title" content="Bridging Analytical Rigor and Human Insight | Kathryn Brink">
-  <meta property="og:description" content="Scientific training, cross-sector experience, and stakeholder perspectives inform Kathryn Brink's rigorous, practical research and recommendations.">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://kathrynrbrink.com/about">
-  <meta property="og:image" content="https://kathrynrbrink.com/assets/kathryn-brink-headshot.jpg">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bridging Analytical Rigor and Human Insight | Kathryn Brink">
-  <meta name="twitter:description" content="Scientific training, cross-sector experience, and stakeholder perspectives inform Kathryn Brink's rigorous, practical research and recommendations.">
-
-  <title>Bridging Analytical Rigor and Human Insight | Kathryn Brink</title>
-  <link rel="canonical" href="https://kathrynrbrink.com/about">
-  <link rel="stylesheet" href="styles.css?v=20260828-about-bio-one-column-1">
-  <script src="navigation.js?v=20260827-1" defer></script>
+{% include head.html %}
+<script src="/navigation.js?v=20261016-responsive-1" defer></script>
+<script src="about-timeline-layout.js?v=20261017-2" defer></script>
 </head>
-<body>
+<body class="about-page">
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
@@ -49,76 +36,88 @@ permalink: /about
   <main id="main-content">
     <header class="about-hero shell">
       <div>
-        <p class="eyebrow">About</p>
         <h1>Bridging analytical rigor and human insight</h1>
         <p class="page-deck">I combine PhD-level scientific training with curiosity about how people's experiences shape their understanding. The result is research that is grounded in evidence and informed by relevant perspectives.</p>
       </div>
 
       <figure>
-        <img
-          src="assets/kathryn-brink-headshot.jpg"
-          alt="Portrait of Kathryn Brink"
-          width="900"
-          height="900"
-        >
+        <picture>
+          <source type="image/webp" srcset="/assets/optimized/kathryn-brink-headshot-240.webp 240w, /assets/optimized/kathryn-brink-headshot-480.webp 480w, /assets/optimized/kathryn-brink-headshot-720.webp 720w" sizes="(max-width: 342px) 70vw, 240px">
+          <img src="/assets/optimized/kathryn-brink-headshot-480.jpg" srcset="/assets/optimized/kathryn-brink-headshot-240.jpg 240w, /assets/optimized/kathryn-brink-headshot-480.jpg 480w, /assets/optimized/kathryn-brink-headshot-720.jpg 720w" sizes="(max-width: 342px) 70vw, 240px" alt="Portrait of Kathryn Brink" width="900" height="900" decoding="async" fetchpriority="high">
+        </picture>
       </figure>
     </header>
 
-    <section class="section section-tint">
-      <div class="shell about-bio">
-        <div class="about-bio-lead">
-          <p class="lead">My cross-sector experience enables me to adapt quickly to new fields, understand different points of view, and communicate findings to diverse audiences.</p>
-        </div>
-        <div class="about-bio-narrative">
-          <p>During my scientific and engineering training at MIT and Rice University, I learned to approach challenging problems with rigor and creativity. At Stanford, I applied these principles beyond the lab, using interviews, case studies, and large-scale data analysis to examine the governance of emerging biotechnologies.</p>
-          <p>At BioMADE, a public-private partnership, I connected research to implementation, with the goal of strengthening U.S. biomanufacturing. As Associate Director, I worked with partners spanning industry, academia, and government, including Congressional offices and the Department of Defense.</p>
-          <p>Today, I draw on these experiences to engage deeply with complex questions, listen attentively to stakeholders, and synthesize what I learn into clear, well-supported recommendations. I apply this approach across fields, with particular experience in biosecurity and biomanufacturing.</p>
-
-          <nav class="profile-links" aria-label="Professional profiles">
-            <a href="https://www.linkedin.com/in/kathryn-brink/" rel="me">
-              <span>LinkedIn</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-            <a href="https://orcid.org/0000-0002-5155-9336" rel="me">
-              <span>ORCID</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-tint">
+    <section class="section section-tint about-experience" aria-labelledby="experience-heading">
       <div class="shell">
-        <div class="section-intro">
-          <h2>Experience across research, policy, and practice</h2>
-        </div>
+        <header class="section-intro">
+          <h2 id="experience-heading">Experience across research, policy, and practice</h2>
+          <p>My cross-sector experience enables me to adapt quickly to new fields, understand different points of view, and communicate findings to diverse audiences.</p>
+        </header>
 
-        <div class="credential-grid">
-          <article>
-            <h3>Independent Consulting</h3>
-            <p class="credential-title">Research and Strategy Consultant</p>
-            <p>Lead and support research projects that produce reports, guidance, and strategic recommendations.</p>
-          </article>
+        <ol class="about-timeline" role="list" aria-label="Experience across research, policy, and consulting">
+          <li class="about-timeline-step">
+            <section class="about-timeline-panel" aria-labelledby="research-heading">
+              <header class="support-heading">
+                <h3 id="research-heading">Research</h3>
+                <p class="support-summary">During my scientific and engineering training at MIT and Rice University, I learned to approach challenging problems with rigor and creativity. At Stanford, I applied these principles beyond the lab, using interviews, case studies, and large-scale data analysis to examine the governance of emerging biotechnologies.</p>
+              </header>
+              <div class="about-timeline-credentials">
+                <dl class="about-resume" aria-label="Research experience and education">
+                  <div>
+                    <dt>Stanford University</dt>
+                    <dd><span aria-hidden="true">·</span> Postdoctoral Fellow, Biotechnology Innovation &amp; International Security</dd>
+                  </div>
+                  <div>
+                    <dt>Rice University</dt>
+                    <dd><span aria-hidden="true">·</span> PhD, Systems, Synthetic, and Physical Biology</dd>
+                  </div>
+                  <div>
+                    <dt>MIT</dt>
+                    <dd><span aria-hidden="true">·</span> SB, Biological Engineering</dd>
+                  </div>
+                </dl>
+                <a class="arrow-link" href="/publications"><span class="action-link-text">View publications <span aria-hidden="true">→</span></span></a>
+              </div>
+            </section>
+          </li>
 
-          <article>
-            <h3>BioMADE</h3>
-            <p class="credential-title">Associate Director</p>
-            <p>Supported the growth of U.S. biomanufacturing through cross-sector partnerships, government engagement, and market and policy research.</p>
-          </article>
+          <li class="about-timeline-step">
+            <section class="about-timeline-panel" aria-labelledby="policy-heading">
+              <header class="support-heading">
+                <h3 id="policy-heading">Policy &amp; partnerships</h3>
+                <p class="support-summary">At BioMADE, a public-private partnership, I connected research to implementation, with the goal of strengthening U.S. biomanufacturing. As Associate Director, I worked with partners spanning industry, academia, and government, including Congressional offices and the Department of Defense.</p>
+              </header>
+              <div class="about-timeline-credentials">
+                <dl class="about-resume" aria-label="Policy and partnerships experience">
+                  <div>
+                    <dt>BioMADE</dt>
+                    <dd><span aria-hidden="true">·</span> Associate Director</dd>
+                  </div>
+                </dl>
+                <a class="arrow-link" href="/work"><span class="action-link-text">View selected work <span aria-hidden="true">→</span></span></a>
+              </div>
+            </section>
+          </li>
 
-          <article>
-            <h3>Stanford University</h3>
-            <p class="credential-title">Postdoctoral Fellow in Biotechnology Innovation &amp; International Security</p>
-            <p>Conducted stakeholder engagement and analyzed structured datasets to study biosafety, biosecurity, and responsible innovation.</p>
-          </article>
-
-          <article>
-            <h3>Rice University</h3>
-            <p class="credential-title">PhD in Systems, Synthetic, and Physical Biology</p>
-            <p>Developed and applied new methods to understand how bacteria sense and respond to their environments.</p>
-          </article>
-        </div>
+          <li class="about-timeline-step">
+            <section class="about-timeline-panel" aria-labelledby="consulting-heading">
+              <header class="support-heading">
+                <h3 id="consulting-heading">Consulting</h3>
+                <p class="support-summary">Today, I draw on these experiences to engage deeply with complex questions, listen attentively to stakeholders, and synthesize what I learn into clear, well-supported recommendations. I apply this approach across fields, with particular experience in biosecurity and biomanufacturing.</p>
+              </header>
+              <div class="about-timeline-credentials">
+                <dl class="about-resume" aria-label="Consulting experience">
+                  <div>
+                    <dt>Independent Consulting</dt>
+                    <dd><span aria-hidden="true">·</span> Research and Strategy Consultant</dd>
+                  </div>
+                </dl>
+                <a class="arrow-link" href="/services"><span class="action-link-text">Explore services <span aria-hidden="true">→</span></span></a>
+              </div>
+            </section>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -128,13 +127,10 @@ permalink: /about
 
         <div class="beyond-work">
           <figure>
-            <img
-              src="assets/kathryn-brink-outdoors.jpg?v=20260828-snowy-coast-1"
-              alt="Kathryn on a snowy coastal trail"
-              width="1800"
-              height="1350"
-              loading="lazy"
-            >
+            <picture>
+              <source type="image/webp" srcset="/assets/optimized/kathryn-brink-outdoors-480.webp 480w, /assets/optimized/kathryn-brink-outdoors-960.webp 960w, /assets/optimized/kathryn-brink-outdoors-1536.webp 1536w" sizes="(max-width: 544px) calc(100vw - 32px), (max-width: 832px) calc(100vw - 64px), (max-width: 1088px) 45vw, 480px">
+              <img src="/assets/optimized/kathryn-brink-outdoors-960.jpg" srcset="/assets/optimized/kathryn-brink-outdoors-480.jpg 480w, /assets/optimized/kathryn-brink-outdoors-960.jpg 960w, /assets/optimized/kathryn-brink-outdoors-1536.jpg 1536w" sizes="(max-width: 544px) calc(100vw - 32px), (max-width: 832px) calc(100vw - 64px), (max-width: 1088px) 45vw, 480px" alt="Kathryn on a snowy coastal trail" width="1800" height="1350" loading="lazy" decoding="async">
+            </picture>
           </figure>
 
           <div class="beyond-copy">

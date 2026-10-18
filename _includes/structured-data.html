@@ -1,0 +1,33 @@
+{%- assign home_url = '/' | absolute_url -%}
+{%- assign person_id = home_url | append: '#person' -%}
+{%- assign website_id = home_url | append: '#website' -%}
+{%- assign portrait_url = site.social_image | absolute_url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "alternateName": {{ site.alternate_name | jsonify }},
+      "url": {{ home_url | jsonify }},
+      "inLanguage": "en-US",
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": "Kathryn Brink",
+      "url": {{ home_url | jsonify }},
+      "jobTitle": "Research and Strategy Consultant",
+      "description": {{ page.description | jsonify }},
+      "image": {{ portrait_url | jsonify }},
+      "sameAs": [
+        "https://www.linkedin.com/in/kathryn-brink/",
+        "https://orcid.org/0000-0002-5155-9336"
+      ]
+    }
+  ]
+}
+</script>

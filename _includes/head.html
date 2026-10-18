@@ -1,0 +1,29 @@
+{%- assign canonical_url = page.url | absolute_url -%}
+{%- assign social_image = site.social_image | absolute_url -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if site.search_indexing == true and page.noindex != true %}
+<meta name="robots" content="index, follow">
+{% else %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+{% unless page.noindex %}<link rel="canonical" href="{{ canonical_url }}">{% endunless %}
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{{ social_image }}">
+<meta property="og:image:width" content="480">
+<meta property="og:image:height" content="480">
+<meta property="og:image:alt" content="Portrait of Kathryn Brink">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title | escape }}">
+<meta name="twitter:description" content="{{ page.description | escape }}">
+<meta name="twitter:image" content="{{ social_image }}">
+<meta name="twitter:image:alt" content="Portrait of Kathryn Brink">
+<link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.stylesheet_version }}">
+{% if page.structured_data %}{% include structured-data.html %}{% endif %}
